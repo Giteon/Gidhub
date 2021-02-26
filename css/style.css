@@ -97,11 +97,6 @@ body
 }
 
 
-/*.navbar-brand img
-{
-	width: 35%;
-}*/
-
 .navbar-nav li
 {
 	padding: 0 20px;
@@ -552,6 +547,11 @@ body
 
 .mobile-show{
 	display: block !important;
+}
+
+.nav-item{
+	margin-left: auto; 
+	margin-right: auto;
 }
 
 }
