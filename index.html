@@ -82,8 +82,10 @@
 	<img src="./images/11.png" data-speed="-5" class="layer wow zoomIn" data-wow-duration=".5s">
 	<img src="./images/12.png" data-speed="-5" class="layer wow zoomIn" data-wow-duration=".5s"> -->
 	<!-- <h2 class="layer wow zoomIn" data-wow-duration=".5s" data-speed="2">PORTFOLIO OF<br>GIDEON FOX</h2> -->
+    <p class="mobile-show" style="display: none; font-weight: bold; text-align: center; margin-top: -50%; width: 80%;">I LOVE DESIGNING FOR ALL DEVICES, BUT MY PORTFOLIO IS BEST VIEWED ON DESKTOP. PLEASE USE YOUR COMPUTER OR HEAD TO THE NEAREST LOCAL LIBRARY FOR A BETTER EXPERIENCE.</p>
 
-<div class="wrap">
+
+<div class="wrap mobile-hide">
     <div class="line">
       <div class="left wow zoomIn" data-wow-duration="1.5s">
         <div class="content">
@@ -132,6 +134,7 @@
               </div>
             </div>
           </div>
+
 
 </section> <!-- landing page section -->
 
@@ -208,6 +211,10 @@
 	  </a>
 	</div>
 
+<div class="container-fluid" style="display: flex; justify-content: center; align-items: center;">
+  <button type="button" onclick="window.location.href='./about-project.html'" class="send_btn btn btn-secondary btn-lg" style="margin-top: 1%;">Learn About the Project</button>
+</div>
+
 </section>
 
 <section id="kahzum_dashboard" class="projects-page">
@@ -269,6 +276,10 @@
     </a>
   </div>
 
+<div class="container-fluid" style="display: flex; justify-content: center; align-items: center;">
+  <button type="button" onclick="window.location.href='./about-project.html'" class="send_btn btn btn-secondary btn-lg" style="margin-top: 1%;">Learn About the Project</button>
+</div>
+
 </section>
 
 
@@ -306,6 +317,10 @@
 <video loop="true" autoplay="autoplay" class="vid_center" controls muted>
   <source src="./images/dashboardvideo.mp4" type="video/mp4">
 </video>
+
+<div class="container-fluid" style="display: flex; justify-content: center; align-items: center;">
+  <button type="button" onclick="window.location.href='./about-project.html'" class="send_btn btn btn-secondary btn-lg" style="margin-top: 1%;">Learn About the Project</button>
+</div>
 
 </section>
 
@@ -573,6 +588,11 @@
 
 	<!-- text effect -->
 	<script type="text/javascript">
+
+  // <!-- only text effect on desktop -->
+  var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+  if(width > 800){
+
 	window.addEventListener('mousemove', handleMouseMove);
 	window.addEventListener('resize', handleWindowResize);
 
@@ -602,6 +622,8 @@
 	    span.style.transform = `translate(${p_speedFast}px)`
 	  })
 	}
+
+  } else {}
 	//we need to recalculate width when the window is resized
 	function handleWindowResize() {
 	  width = window.innerWidth;
