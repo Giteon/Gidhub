@@ -278,6 +278,30 @@ body
 	padding-top: 10%;
 }
 
+.about-header
+{
+	font-family: Futura;
+	font-weight: bold;
+	font-size: 5.5vw;
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	text-align: center;
+	padding-top: 2%;
+	margin-bottom: 0%;
+}
+
+.twoColumns{
+	font-family: Futura;
+	font-size: .88vw;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
 #kahzum_wireframe{
 	scroll-snap-align: center;
 }
@@ -505,7 +529,29 @@ body
 
 	.footer2{
 		font-size: 8px;
+		margin-bottom: 5% !important;
 	}
 
+	.twoColumns{
+	font-family: Futura;
+	font-size: 1.78vw;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+	margin-top: 2%;
+}
+.about-header{
+	display: block !important;
+}
+.mobile-hide{
+	display: none;
+}
+
+.mobile-show{
+	display: block !important;
+}
 
 }
