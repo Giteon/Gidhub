@@ -13,11 +13,6 @@
   src: url("/fonts/Kanit.ttf");
 }
 
-@font-face {
-  font-family: Futura;
-  src: url("/fonts/FuturaHeavy.ttf");
-}
-
 *
 {
 	margin: 0;
@@ -283,7 +278,15 @@ body
 	padding-top: 10%;
 }
 
+#kahzum_wireframe{
+	scroll-snap-align: center;
+}
+
 #kahzum_dashboard{
+	scroll-snap-align: center;
+}
+
+#kahzum_interactive{
 	scroll-snap-align: center;
 }
 
@@ -307,12 +310,33 @@ body
 .dashboard-img{
 	width: 50%;
 	-webkit-transform: translate(50%, 0%);
-	padding-top: 3%;
+	padding-top: 2%;
+}
+
+
+.vid_center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	width: 900px;
+	filter: drop-shadow(2px 2px 5px #BBB);
+  	filter: drop-shadow(-2px -2px 5px #BBB);
+}
+
+.img-shadow{
+	/*-webkit-filter: drop-shadow(5px -50px 5px #222);*/
+  filter: drop-shadow(2px 2px 5px #BBB);
+  filter: drop-shadow(-2px -2px 5px #BBB);
 }
 
 .carousel-control-next,
 .carousel-control-prev {
     filter: invert(100%);
+}
+
+.carousel-item{
+	padding-bottom: 1%;
 }
 
 .dropdown-item{
@@ -409,3 +433,79 @@ body
 	/*.navbar .nav-item .dropdown-menu{ margin-top:0; }*/
 }	
 /* ============ desktop view .end// ============ */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+	.p_spanSlow{
+	  	margin-top: 50%;
+	}
+	.left {
+	  color:black;
+	  transform: skew(0deg, 0deg);
+	}
+	.right {
+	  color: black;
+	  transform: skew(0deg, 0deg);
+	}
+	.p_left {
+	  color:black;
+	  transform: skew(0deg, 0deg);
+	}
+	.p_right {
+	  color: black;
+	  transform: skew(0deg, 0deg);
+	}
+
+	.portfolio_title{
+		margin-top: 0% !important;
+	}
+
+		.navbar-nav li
+	{
+		padding: 0 20px;
+		font-size: 5vw;
+	}
+
+	.nav-link {
+		color: #000 !important;
+	}
+
+	.nav-link:hover {
+		color: #F9D93D !important;
+		transform: scale(1.00);
+		transition: ease-out 0s;
+	}
+
+	.navbar-nav > .active a {
+	  color: #F9D93D !important;
+	}
+			
+	.fa-bars
+	{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 20% !important;
+		color: #000;
+		font-size: 60px !important;
+	}
+
+	.dropdown-item{
+	font-size: 4vw;
+	font-family: Futura;
+	font-weight: bold;
+	}
+
+	.vid_center{
+	width: 300px;
+	}
+
+	.footer1{
+		font-size: 15px;
+	}
+
+	.footer2{
+		font-size: 8px;
+	}
+
+
+}
