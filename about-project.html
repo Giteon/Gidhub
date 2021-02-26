@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!--font awesome-->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>About Dashboard</title>
+</head>
+<body>
+
+<!-- <section id="nav bar"> -->
+	<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+	  <div class="container-fluid">
+	  	<!-- <a class="navbar-brand" href="#"><img src="images/logo.png"></a> -->
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    	<i class="fa fa-bars"></i>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav mx-auto">
+	        <li class="nav-item">
+	          <a class="nav-link active wow zoomIn" data-wow-duration=".3s" data-wow-delay="1s" aria-current="page" href="./index.html#home">WELCOME</a>
+	        </li>
+	        <li class="nav-item dropdown wow zoomIn" data-wow-duration=".6s" data-wow-delay="1s">
+				<a class="nav-link dropdown-toggle wow zoomIn" data-wow-duration=".6s" data-wow-delay="1s" href="#" data-toggle="dropdown">PROJECTS</a>
+				<ul class="dropdown-menu">
+          <li><a class="dropdown-item wow fadeIn" data-wow-delay=".05s" href="./index.html#kahzum_wireframe">DASHBOARD WIREFRAME</a></li>
+					<li><a class="dropdown-item wow fadeIn" data-wow-delay=".1s" href="./index.html#kahzum_dashboard">HI-FI DASHBOARD</a></li>
+          <li><a class="dropdown-item wow fadeIn" data-wow-delay=".15s" href="./index.html#kahzum_interactive">INTERACTIVE DASHBOARD</a></li>
+					<li><a class="dropdown-item wow fadeIn" data-wow-delay=".2s" href="./index.html#kahzum_website">WEBSITE - KAHZUM</a></li>
+					<li><a class="dropdown-item wow fadeIn" data-wow-delay=".25s" href="./index.html#kahzum_fliers">FLIERS - KAHZUM</a></li>
+					<li><a class="dropdown-item wow fadeIn" data-wow-delay=".3s" href="./index.html#maids_website">WEBSITE DESIGN - MAIDS</a></li>
+				</ul>
+			</li>
+	        <li class="nav-item">
+	          <a class="nav-link wow zoomIn" data-wow-duration=".9s" data-wow-delay="1s" href="./index.html#contact_section">CONTACT</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+<!-- </section> -->
+<section id="about">
+	<div class="container-fluid">
+		<div class="col-md-10" style="margin-left: auto; margin-right: auto;">
+		<p class="about-header">THE KAHZUM DASHBOARD</p>
+		<p class="twoColumns">I joined Kahzum shortly after its conception in 2019, pre-Covid. At the time, our principal project was a <b>POS-augmenting data hub that gave small business owners access to real-time stats on customer traffic,</b> as well as actionable insights into how to optimize foot traffic and conversion. We had developed Arduino-powered customer-tracking devices, which we lovingly called “Zum Cubes.” The cubes collect the IP address of each new device entering the store, which gives us an estimate of customer traffic throughout the day, as well as info on repeat visitors, and how long they spent in the store. Armed with this data, as well as a larger picture of how the business operates, our system generates suggestions for actions the business owner can take to increase store traffic, conversion, and optimize their operations overall. Although most PoS systems offer robust dashboards on sales performance, we provided <b>"optimization through experimentation",</b> using traffic-based metrics to allow business owners to A/B test different strategies. We wanted all this information to be available to clients through a clean, welcoming and digestible dashboard.<br><br>
+
+I led the product design, including information architecture, user interface, and user experience design for the dashboard, which I built in Adobe Illustrator (for the UI) and Adobe XD (for the UX). My goals for the dashboard were:
+<br><br>
+<b>1.</b> Present <b>as much information as possible with as little complexity as possible,</b> and maintain an intuitive, welcoming visual layout.<br>
+<b>2.</b>Give a snapshot of today’s statistics, but also provide an option for users to explore the data in more depth.<br>
+<b>3.</b>Present actionable suggestions, or “insights” in a card format, <b>encouraging experimentation and making the user feel in control.</b><br>
+<b>4.</b>Allow users to track direct cause-and-effect traffic changes from accepted insights.
+<br><br>
+My first step was to identify which modules should be included, and where they should live. I broke the modules into four sections: <b>Home, Performance, Insights, and Campaigns.</b> First, the homepage. The purpose of the homepage is to give a snapshot of the data relevant to the current moment, using the three primary metrics: visitors, returnee rate, and linger (in-store) time. These metrics are displayed at the top, and below are two modules that allow comparison of today’s visitor and returnee metrics from their equivalents the same day last week, and overall averages.
+<br><br>
+The performance section offers a deeper look into the data. The top two modules display bar graph representations, weekly on the left and monthly on the right. Dropdowns allow the user to switch between metrics. Below is what I call the <b>“sentence builder”</b> module. Aligning with Kahzum’s emphasis on strategy experimentation and A/B testing, the sentence builder gives the user full control to compare traffic performance from any one metric between any two timeframes. 
+<br><br>
+On the insights page, suggestions are presented to the user on cards that can be browsed by swiping and also accepted or rejected if the user is interested in putting the suggestion into practice. “Try a new window display to increase foot traffic,” for example. <b>Rejected insights go away; accepted insights become campaigns.</b>
+<br><br>
+Lastly, the campaigns page gives users data on how their actions have affected the relevant metrics and how confident we are that an action was responsible for a change in performance.  There’s also an option to view past campaigns and terminate active campaigns.
+<br><br>
+The last stage was designing the animations and interactions. The goals were to make each dropdown hoverable; having modules slide in and out as the user moves from section to section; making graphs and their axes change in response to metric selection and hoverable for more information; allowing insights and campaigns to be draggable left and right and for insights to be either rejected or accepted. Although the pandemic cut the Kahzum dashboard initiative short, <b>it was the project that solidified my passion for UX.</b>
+</p>
+	</div>
+	</div>
+
+
+    
+</body>
+</html>
