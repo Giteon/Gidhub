@@ -25,6 +25,7 @@ html, body {
     height:100%;
     width:100%;
     padding:0;
+    background-color: black;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -40,7 +41,7 @@ body
 .loader_bg{
 	position: absolute;
 	z-index: 99;
-	background: #fff;
+	background: black;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
@@ -90,7 +91,7 @@ body
 
 .navbar{
 	/*position: sticky;*/
-	background: white;
+	background: transparent;
 	scroll-snap-align: start;
 	padding-top: 2%;
 	/*box-shadow: 0px 4px 7px #777;*/
@@ -103,11 +104,11 @@ body
 	font-size: 2.1vw;
 	font-family: Futura;
 	font-weight: bold;
-	stroke: black;
+	stroke: white;
 }
 
 .nav-link {
-	color: #000 !important;
+	color: white !important;
 }
 
 .nav-link:hover {
@@ -174,7 +175,7 @@ body
   transform: skew(0deg, -15deg);
 }
 .right {
-  color: black;
+  color: white;
   transform: skew(0deg, 15deg);
 }
 .left .content {
@@ -199,7 +200,7 @@ body
   transform: skew(0deg, -3deg);
 }
 .p_right {
-  color: black;
+  color: white;
   transform: skew(0deg, 3deg);
 }
 .p_left .p_content {
@@ -277,6 +278,7 @@ body
 {
 	font-family: Futura;
 	font-weight: bold;
+	color: white;
 	font-size: 5.5vw;
 	display: block; 
 	margin-left: auto; 
@@ -289,6 +291,7 @@ body
 .twoColumns{
 	font-family: Futura;
 	font-size: .88vw;
+	color: white;
 	-webkit-column-gap: 20px;
 	-moz-column-gap: 20px;
 	column-gap: 20px;
@@ -305,7 +308,23 @@ body
 	scroll-snap-align: center;
 }
 
+#navbar_animation{
+	scroll-snap-align: center;
+}
+
 #kahzum_interactive{
+	scroll-snap-align: center;
+}
+
+#mobile_interactive{
+	scroll-snap-align: center;
+}
+
+#mobile_interactive{
+	scroll-snap-align: center;
+}
+
+#mobile_mockup{
 	scroll-snap-align: center;
 }
 
@@ -317,10 +336,10 @@ body
 	scroll-snap-align: center;
 }
 
-#maids_website{
+/*#maids_website{
 	scroll-snap-align: center;
 }
-
+*/
 #contact_section
 {
 	scroll-snap-align: end;
@@ -332,6 +351,10 @@ body
 	padding-top: 2%;
 }
 
+.mockup-img{
+	width: 50%;
+	padding-top: 2%;
+}
 
 .vid_center{
 	display: block;
@@ -339,19 +362,19 @@ body
 	margin-right: auto;
 	margin-top: 2%;
 	width: 900px;
-	filter: drop-shadow(2px 2px 5px #BBB);
-  	filter: drop-shadow(-2px -2px 5px #BBB);
+	filter: drop-shadow(2px 2px 5px #999);
+  	filter: drop-shadow(-2px -2px 5px #999);
 }
 
 .img-shadow{
 	/*-webkit-filter: drop-shadow(5px -50px 5px #222);*/
-  filter: drop-shadow(2px 2px 5px #BBB);
-  filter: drop-shadow(-2px -2px 5px #BBB);
+  filter: drop-shadow(2px 2px 5px #999);
+  filter: drop-shadow(-2px -2px 5px #999);
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: invert(100%);
+    /*filter: invert(100%);*/
 }
 
 .carousel-item{
@@ -372,7 +395,7 @@ body
 }
 
 .contact-form{
-    background: #fff;
+    background: black;
     /*margin-top: 10%;*/
     margin-bottom: 5%;
     width: 70%;
@@ -389,6 +412,8 @@ body
 	font-family: Futura;
 	font-weight: bold;
 	text-align: center;
+	color: black !important; 
+	background-color: white !important;
 	font-size: 1.2vw;
 	display: block !important;
 	margin-left: auto !important;
@@ -397,9 +422,20 @@ body
 	margin-top: 3%;
 }
 
+.learn_btn{
+	margin-top: 1%; 
+	color: black !important; 
+	background-color: white !important;
+}
+
+.learn_btn:hover{
+	color: white !important; 
+	background-color: #F9D93D !important;
+}
+
 .send_btn:hover{
-	color: #F9D93D;
-	background-color: black;
+	color: white !important; 
+	background-color: #F9D93D !important;
 	transform: scale(1.05);
 	transition: ease-out .2s;
 }
@@ -418,6 +454,7 @@ body
 {
 	font-family: Futura;
 	font-weight: bold;
+	color: white;
 	font-size: 1.2vw;
 	display: block; 
 	margin-left: auto; 
@@ -429,17 +466,19 @@ body
 .footer2
 {
 	font-family: Futura;
+	color: cyan;
 	font-weight: bold;
 	font-size: .8vw;
 	display: inline-block;
 	margin-left: 10px; 
 	margin-right: 10px;
 	text-align: center;
-	padding-top: 0%;
+	padding-top: .5%;
 	padding-bottom: 0% !important;
 }
 
 .footer2:hover{
+	color: yellow;
 	transform: scale(1.1);
 	transition: ease-out .2s;
 }
@@ -459,19 +498,19 @@ body
 	  	margin-top: 50%;
 	}
 	.left {
-	  color:black;
+	  color:white;
 	  transform: skew(0deg, 0deg);
 	}
 	.right {
-	  color: black;
+	  color: white;
 	  transform: skew(0deg, 0deg);
 	}
 	.p_left {
-	  color:black;
+	  color:white;
 	  transform: skew(0deg, 0deg);
 	}
 	.p_right {
-	  color: black;
+	  color: white;
 	  transform: skew(0deg, 0deg);
 	}
 
@@ -486,7 +525,7 @@ body
 	}
 
 	.nav-link {
-		color: #000 !important;
+		color: white !important;
 	}
 
 	.nav-link:hover {
@@ -504,7 +543,7 @@ body
 		margin-left: auto !important;
 		margin-right: auto !important;
 		margin-top: 20% !important;
-		color: #000;
+		color: white;
 		font-size: 60px !important;
 	}
 
