@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 
 	<title>Portfolio of Gideon Fox</title>
 </head>
@@ -84,7 +86,7 @@
 	<img src="./images/11.png" data-speed="-5" class="layer wow zoomIn" data-wow-duration=".5s">
 	<img src="./images/12.png" data-speed="-5" class="layer wow zoomIn" data-wow-duration=".5s"> -->
 	<!-- <h2 class="layer wow zoomIn" data-wow-duration=".5s" data-speed="2">PORTFOLIO OF<br>GIDEON FOX</h2> -->
-    <p class="mobile-show" style="display: none; font-weight: bold; text-align: center; color: white; margin-top: -50%; width: 80%;">I LOVE DESIGNING FOR ALL DEVICES, BUT MY PORTFOLIO IS BEST VIEWED ON DESKTOP. PLEASE USE YOUR COMPUTER OR HEAD TO THE NEAREST LOCAL LIBRARY FOR A BETTER EXPERIENCE.</p>
+    <p class="mobile-show" style="display: none; font-weight: bold; color: white; text-align: center; margin-top: -50%; width: 80%;">I LOVE DESIGNING FOR ALL DEVICES, BUT MY PORTFOLIO IS BEST VIEWED ON DESKTOP. PLEASE USE YOUR COMPUTER OR HEAD TO THE NEAREST LOCAL LIBRARY FOR A BETTER EXPERIENCE.</p>
 
 
 <div class="wrap mobile-hide">
@@ -607,14 +609,14 @@
            <div class="row" style="justify-content: center;">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        <input type="text" name="txtName" class="form-control" style="border: none;" placeholder="Your Name *" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        <input type="text" name="txtEmail" class="form-control" style="border: none;" placeholder="Your Email *" value="" />
                     </div>
                     
                     <div class="form-group">
-                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px; border: none;"></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" name="btnSubmit" class="send_btn btn btn-secondary btn-lg" value="SEND MESSAGE" />
@@ -669,13 +671,13 @@
   var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
   if(width > 800){
 
-	window.addEventListener('mousemove', handleMouseMove);
-	window.addEventListener('resize', handleWindowResize);
+	window.addEventListener('mousemove', handleMouseMove, false);
+	window.addEventListener('resize', handleWindowResize, false);
 
-	const spansSlow = document.querySelectorAll('.spanSlow');
-	const spansFast = document.querySelectorAll('.spanFast');
-	const p_spansSlow = document.querySelectorAll('.p_spanSlow');
-	const p_spansFast = document.querySelectorAll('.p_spanFast');
+	const spanSlow = document.querySelectorAll('.spanSlow');
+	const spanFast = document.querySelectorAll('.spanFast');
+	const p_spanSlow = document.querySelectorAll('.p_spanSlow');
+	const p_spanFast = document.querySelectorAll('.p_spanFast');
 
 	let width = window.innerWidth;
 
@@ -685,21 +687,21 @@
 	  let speedFast = 256*window.innerWidth/2500 * normalizedPosition;
 	  let p_speedSlow = 64*window.innerWidth/2500 * normalizedPosition;
 	  let p_speedFast = 128*window.innerWidth/2500 * normalizedPosition;
-	  spansSlow.forEach((span) => {
+	  spanSlow.forEach((span) => {
 	    span.style.transform = `translate(${speedSlow}px)`;
 	  });
-	  spansFast.forEach((span) => {
+	  spanFast.forEach((span) => {
 	    span.style.transform = `translate(${speedFast}px)`
 	  });
-	  p_spansSlow.forEach((span) => {
+	  p_spanSlow.forEach((span) => {
 	    span.style.transform = `translate(${p_speedSlow}px)`;
 	  });
-	  p_spansFast.forEach((span) => {
+	  p_spanFast.forEach((span) => {
 	    span.style.transform = `translate(${p_speedFast}px)`
 	  })
-	}
-
-  } else {}
+	}} 
+  // end if
+  else {}
 	//we need to recalculate width when the window is resized
 	function handleWindowResize() {
 	  width = window.innerWidth;
