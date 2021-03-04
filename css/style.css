@@ -338,6 +338,10 @@ body
 	scroll-snap-align: center;
 }
 
+#dashboard_colorblind{
+	scroll-snap-align: center;
+}
+
 /*#maids_website{
 	scroll-snap-align: center;
 }
@@ -594,5 +598,46 @@ body
 	margin-left: auto; 
 	margin-right: auto;
 }
+
+#kahzum_wireframe{
+	display: none;
+}
+
+#kahzum_dashboard{
+	display: none;
+}
+
+#navbar_animation{
+	display: none;
+}
+
+#kahzum_interactive{
+	display: none;
+}
+
+#mobile_interactive{
+	display: none;
+}
+
+#mobile_interactive{
+	display: none;
+}
+
+#mobile_mockup{
+	display: none;
+}
+
+#kahzum_website{
+	display: none;
+}
+
+#kahzum_fliers{
+	display: none;
+}
+
+#contact_section{
+	display: none;
+}
+
 
 }
